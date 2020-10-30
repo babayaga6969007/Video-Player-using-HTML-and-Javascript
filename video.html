@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+<body>
+<style>
+  body {text-align: center;}
+  body {background-color:#52C8AA   ;}
+  button{background-color: #616DA1;}
+  button{font-size: 14px;}
+  button{padding:  5px 20px;}
+  button{border-radius: 10px;}
+  button{border: solid white;}
+  button{margin-top: 30px;}
+  button{font-size: 14px;}
+
+
+  button{color: #fff;}
+
+</style> 
+
+
+
+ 
+
+  <button onclick="playPause()">Play/Pause</button> 
+  
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeFull()">Full</button>
+  <br><br>
+  <video id="video1" width="600" controls="" controls poster="image.jpeg" controls loop>
+    <source src="video.mp4" type="video/mp4">
+   
+  </video>
+
+ 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 900; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 300; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 600; 
+} 
+function makeFull() { 
+    myVideo.width = 1500; 
+} 
+</script> 
+</body> 
+</html>
